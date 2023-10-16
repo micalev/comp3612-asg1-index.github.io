@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #1 Advanced Art Work Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="styles/variable-palette-7.css" rel="stylesheet">
+    <link href="styles/styles2.css" rel="stylesheet">
+</head>
+<body>
+    <div class="title">Advanced Art Work Search</div>
+    <form method="POST" action="http://www.randyconnolly.com/tests/process.php">
+    <div class="searchbar">
+        <input id="searchbox" type="search" placeholder="Search">
+
+        <label>Subject:</label>
+        <label><input type="radio" name="subject" value="History">History</label>
+        <label><input type="radio" name="subject" value="Person">Person</label>
+        <label><input type="radio" name="subject" value="Landscape">Landscape</label>
+
+        <select id="genrefilter" name="filter">
+            <option value="0">Neo-Classicism</option>
+            <option value="1">Baroque</option>
+            <option value="2">Renaissance</option>
+            <option value="3">Realism</option>
+            <option value="4">Dutch Golden Age</option>
+            <option value="5">Other</option>
+        </select>
+       
+    </div>
+
+    <div id="main">
+        <div class="tabletitle">Paintings</div>
+        <table>
+            <thead id="whitebg">
+                <tr>
+                    <th class="t1"></th>
+                    <th class="t2">Title</th>
+                    <th class="t3">Artist</th>
+                    <th class="t4">Year</th>
+                    <th class="t5">Genre</th>
+                    <th class="t6">Actions</th>
+                </tr>
+            </thead>
+           
+            <tbody>
+                <tr>
+                    <td class="t1">
+                        <input type="checkbox" name="index[]" value="10">
+                        <img class="portraits" src="images/125010.jpg" alt="Portrait of Aida Christina Assink">
+                    </td>
+                   <td class="t2 alignleft">
+                        <i>Portrait of Aida Christina Assink</i>
+                    </td>
+                    <td class="t3">Kruseman, Jan</td>
+                    <td class="t4">1833</td>
+                    <td class="t5">Realism</td>
+                    <td class="t6 actionbuttons">
+                        <button type="button" class="editbutton"><img src="images/edit.png"></button>
+                        <button type="button"><img src="images/archive.png"></button>
+                        <button type="button"><img src="images/delete.png"></button>
+                    </td>
+                </tr>
+
+                <!-- Horizontal Line -->
+                <tr>
+                    <td colspan="6">
+                      <hr>
+                    </td>
+                </tr>          
+                
+                <tr>
+                    <td class="t1">
+                        <input type="checkbox" name="index[]" value="20">
+                        <img class="portraits" src="images/125020.jpg" alt="Portrait of William II">
+                    </td>
+                    <td class="t2">
+                        <i>Portrait of William II: King of the Netherlands</i>
+                    </td> 
+                    <td class="t3">Kruseman, Jan</td>
+                    <td class="t4">1839</th>
+                    <td class="t5">Realism</td>
+                    <td class="t6 actionbuttons">
+                        <button type="button" class="editbutton"><img src="images/edit.png"></button>
+                        <button type="button"><img src="images/archive.png"></button>
+                        <button type="button"><img src="images/delete.png"></button>
+                    </td>
+                </tr>
+                
+                 <!-- Horizontal Line -->
+                 <tr>
+                    <td colspan="6">
+                      <hr>
+                    </td>
+                </tr>  
+
+                <tr>
+                    <td class="t1">
+                        <input type="checkbox" name="index[]" value="30">
+                        <img class="portraits" src="images/130020.jpg" alt="Orphans in Amsterdam">
+                    </td>
+                    <td class="t2">
+                        <i>Three Girls from the Amsterdam Orphanage</i>
+                    </td>
+                    <td class="t3">Schwartze, Therese</td>
+                    <td class="t4">1885</td>
+                    <td class="t5">Realism</td>
+                    <td class="t6 actionbuttons">
+                        <button type="button" class="editbutton"><img src="images/edit.png"></button>
+                        <button type="button"><img src="images/archive.png"></button>
+                        <button type="button"><img src="images/delete.png"></button>
+                    </td>
+                </tr>
+
+                <!-- Horizontal Line -->
+                <tr>
+                    <td colspan="6">
+                      <hr>
+                    </td>
+                </tr>      
+      
+                <tr>
+                    <td class="t1">
+                        <input type="checkbox" name="index[]" value="40">
+                        <img class="portraits" src="images/127010.jpg" alt="Windmill at Wilk">
+                    </td>
+                    <td class="t2">
+                        <i>The Windmill at Wijk bij Duurstede</i>
+                    </td>
+                    <td class="t3">Ruisdael, Jacob van</td>
+                    <td class="t4">1670</td>
+                    <td class="t5">Dutch Golden Age</td>
+                    <td class="t6 actionbuttons">
+                        <button type="button" class="editbutton"><img src="images/edit.png"></button>
+                        <button type="button"><img src="images/archive.png"></button>
+                        <button type="button"><img src="images/delete.png"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="actionslist">
+        <select id="actionsfilter" name="actions">
+            <option value="0"></option>
+            <option value="1">Archive</option>
+            <option value="2">Edit</option>
+            <option value="3">Delete</option>
+            <option value="4">Option</option>
+        </select>
+        <button id="applyButton" type="button">Apply to All</button>
+    </div>
+    </form>
+</body>
+</html>
