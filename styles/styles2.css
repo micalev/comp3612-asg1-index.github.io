@@ -1,0 +1,134 @@
+:root {
+    --color-support-1-050: #DCEEFB;
+
+    --color-primary-1-500: #2CB1BC;
+    --color-primary-1-600: #14919B;
+    --color-primary-1-800: #0A6C74;
+    --color-primary-1-900: #044E54; 
+
+    --color-neutral-050: #FAF9F7;
+    --color-neutral-100: #E8E6E1;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;    
+    font-family: 'Arial';
+}
+
+.title {
+    padding: 6px;
+    font-size: 20px;
+    background-color: var(--color-primary-1-900);
+    color: var(--color-neutral-050);
+    text-align: center;
+}
+
+.searchbar {
+    background-color: var(--color-neutral-100);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#searchbox {
+    width: 200px;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+#genrefilter {
+    margin-left: 10px;
+    padding: 4px;
+    width: 130px;
+}
+
+.tabletitle {
+    text-align: center;
+    background-color: var(--color-primary-1-800);
+    padding: 6px;
+    color: var(--color-neutral-050);
+}
+
+/* Inside the Table */
+#main {
+    background-color: var(--color-neutral-100);
+    padding: 10px 45px 10px 45px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;  
+}
+
+#whitebg {
+    background-color: var(--color-support-1-050);
+}
+
+.t1 {
+    display: flex; /* Center checkboxes */
+}
+
+.t2, .t3, .t4, .t5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.portraits {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.actionbuttons img {
+    width: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.editbutton {
+   background-color: var(--color-primary-1-500);
+   border: 1px solid;
+}
+
+hr {
+    border-color: var(--color-neutral-100);
+}
+
+/* Bottom  */
+#actionslist {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: var(--color-neutral-100);
+}
+
+#actionsfilter {
+    padding: 4px;
+    margin-right: 5px;
+}
+
+#applyButton {
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: var(--color-primary-1-600);
+    color: var(--color-neutral-050);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 300;
+    border: none;
+}
+
