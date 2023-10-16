@@ -1,0 +1,128 @@
+/* Background colors */
+#greenbg {
+    background-color: #5bb189;
+}
+
+#purplebg {
+    background-color: #4B0082;
+}
+
+#orangebg {
+    background-color: #EC632A;
+}
+
+.form:hover {
+    background-color: #437CBF;
+}
+
+/* Main */
+html {
+    padding: 3rem;
+    background-color: #E5E9EF;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 910px;    
+    font-family: 'Open Sans';
+}
+
+h1 {
+    padding-top: 10pt;
+    font-size: 36px;
+}
+
+#main {
+    box-shadow: 0px 0px 10px gray;
+    background-color: white;
+    text-align: center;
+}
+
+.studentplans {
+    display: inline-block;
+    width: 300px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#main ul {
+    padding: 0%;
+} 
+
+#main li {
+    padding: 20px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.l1 b {
+    font-size: 24px;
+}
+
+b {
+    font-weight: 800;
+}
+
+.studentplans li:nth-child(odd) {
+    background-color: rgba(47, 59, 64, 0.35);
+}
+
+.l5 {
+    margin-bottom: 35px;
+}
+
+
+/* 'View Form' Button */
+.form {
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: #3A63A5;
+    color: white;
+    padding: 15px 85px 15px 85px;
+    font-weight: 300;
+}
+
+.darkbg {
+    color: white;
+    background-color: #2F4F4F;
+}
+
+/* Footer / 'Confidence' div */
+#confidence {
+    background-image: url(images/checkmark.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-top: 40px;
+    padding-top: 5pt;
+    padding-left: 15pt;
+    padding-bottom: 5pt;
+}
+
+.confidence li::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: -30px; /* Negative margin to align the checkmark */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: -10pt;
+}
+
+#confidence a {
+    color: skyblue;
+}
+
+#confidence li {
+    padding: 3pt;
+}
+
+#confidence p {
+    font-size: 14px;;
+}
